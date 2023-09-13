@@ -1,0 +1,150 @@
+# nvinceability.github.io
+<!DOCTYPE html>
+<html>
+<head>
+    <!---utf-8 is unicode encoding used in websites--->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale = 1">
+    <title>
+        Horse Creek Cabins
+    </title>
+    <!---links the html document to the css style-->
+    <link rel="stylesheet" href="style.css">
+    <!--links to google's fonts. Can choose fonts and create link from Google Fonts-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;600;700&display=swap" rel="stylesheet">
+    <!---links to a website with free icons. Google search font awesome icons-->
+    <link rel="stylesheet" href="css/font-awesome.css" />
+    <link rel="icon" href="images/hcclogo.jpg">
+</head>
+
+    <body>
+        <section class="header">
+            <nav>
+                <a href="index.html"><img src="images/horsecreekcabins1.jpg"></a>
+                <div class="nav-links" id="navLinks">
+                    <! This is the closing icon for mobile>
+                    <i class="fa fa-times" onclick="hideMenu()"></i>
+
+                    <ul>
+                        <li><a href="index.html">HOME</a></li>
+                        <li><a href="https://www.airbnb.com/h/horsecreekcabins">CABINS AND RV PARKING</a></li>
+                        <li><a href="Coming_Soon.html">NEARBY ATTRACTIONS</a></li>
+                        <li><a href="dining-and-shopping.html">DINING AND SHOPPING</a></li>
+                        <li><a href="Coming_Soon.html">PHOTO GALLERY</a></li>
+                    </ul>
+                </div>
+                <i class="fa fa-bars" onclick="showMenu()"></i>
+
+            </nav>
+
+            <div class="text-box">
+                <h1>Horse Creek Cabins</h1>
+                <h2>
+                    A great rural vacation!
+                </h2>
+                <p></p>
+                <a href="https://www.airbnb.com/h/horsecreekcabins" class="hero-btn">Book Now!</a>
+            </div>
+        </section>
+
+        <!---welcome-->
+        <section class="welcome">
+            <h1>Welcome to Horse Creek Cabins</h1>
+            <p>Conveniently located only a few minutes from Hatfield McCoy Trails at Ivy Branch 
+            and the new SEVA WV (formerly Hobet Mine) site. Nearby attractions 
+            include shopping centers, a waterpark, our photo gallery, and more!</p>
+        <div class="row">
+            <div class="welcome-col">
+                <h2>About Us</h2>
+                <p>Horse Creek Cabins is a locally owned by Vincent Smith. As a resident of Morrisvale, WV 
+                my entire life, I want to share the beauty and fun we have to offer! All of our booking is done through AirBnB; 
+                signing up for an account is completely free! If you have any questions, 
+                comments or feedback, feel free to contact us on AirBnB, Facebook, or Email.</p>
+                <div class="inlineblocks">
+                    <div class="block1">
+                        <a href="mailto:horsecreekcabins@gmail.com" class="hero-btn1"> EMAIL US </a>
+                    </div>
+                    <div class="block2">
+                        <a href="https://www.facebook.com/horsecreekcabins">
+                            <img src="images/facebook.png"
+                                 width="50"
+                                 height="50" />
+                        </a>
+                    </div>
+                    <div class="block3">
+                        <a href="https://www.airbnb.com/h/horsecreekcabins">
+                            <img src="images/airbnb.png"
+                                 width="50"
+                                 height="50" />
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+        </section>
+
+        <section class="locations">
+            <h1>Lots to do!</h1>
+            <!-----Dividing into parts-->
+            <div class="row">
+                <a href="https://trailsheaven.com/plan-your-trip/choose-a-trail/ivy-branch/">
+                    <div class="locations-col">
+                        <h3>Hatfield-McCoy Trails</h3>
+                        <img src="images/ivy-branch.jpg">
+                        <div class="layer">
+                        </div>
+                    </div>
+                    </a>
+            </div>
+                <div class="row">
+                    <a href="https://wvexplorer.com/attractions/wildlife-management-areas/upper-mud-river-wildlife-management-area/">
+                    <div class="locations-col">
+                        <h3>Upper Mud River Wildlife Management Area</h3>
+                        <img src="images/channelcat.jpg">
+                        <div class="layer">
+                        </div>
+                    </div>
+                    </a>
+                </div>
+                    <div class="row">
+                        <a href="https://www.waterwayspark.net/">
+                        <div class="locations-col">
+                            <h3>Water Ways</h3>
+                            <img src="images/waterways.jpg">
+                            <div class="layer">
+
+                            </div>
+                        </div>
+                        </a>
+                    </div>
+                        <div class="row">
+                            <a href="https://cityofsouthcharleston.com/stay-shop-play/shopping-in-south-charleston/">
+                                <div class="locations-col">
+                                    <h3>Shopping</h3>
+                                    <img src="images/shops.jpg">
+                                    <div class="layer">
+
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+</section>
+
+<!--------------->
+
+        <!------Javascript for Toggle Menu------->
+        <script>
+            var navLinks = document.getElementById("navLinks");
+            function showMenu() {
+                navLinks.style.right = "0";
+            }
+            function hideMenu() {
+                navLinks.style.right = "-200px";
+            }
+        </script>
+    </body>
+</html>
+
